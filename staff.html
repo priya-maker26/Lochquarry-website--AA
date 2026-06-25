@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff at Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+</head>
+ <header class="site-header">
+        <div class="top-area"><a href="index.html">
+            <img src="image/logo/Logo-jpg.jpg" alt="Lochquarry Outdoor Centre logo" class="logo">
+        </a>
+            <div class="welcome-text">
+            <h1>Lochquarry Outdoor Centre</h1>
+            <p>World Famous <span id="typedText">interactive</span></p>
+        </div>
+            </div>
+                <div class="banner">
+                    <imgsrc="image/banner/banner-Lochquarry outdoor centre.png" alt="Lochquarry Outdoor Centre banner">
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="land.html">LAND</a></li>
+                        <li><a href="water.html">WATER</a></li>
+                        <li><a href="rope.html">ROPE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="staff.html">STAFF</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <main class="page-content">
+        <section class="staff-section">
+            <h2>Meet our Staff</h2>
+            <div class="staff-grid">
+                <figure class="staff-card">
+                <img src="image/staff/claire_jack.jpeg" alt="Claire Jack">
+                <figcaption>
+                    <h3>Claire Jack</h3>
+                    <p>Outdoor Activity Instructor</p>
+                </figcaption>
+                </figure>
+                <figure class="staff-card">
+                    <img src="image/staff/marion_hunter.jpg" alt="Marion Hunter">
+                    <figcaption>
+                        <h3>Marion Hunter</h3>
+                        <p>Water Activity instructor</p>
+                    </figcaption>
+                </figure>
+                <figure class="staff-card">
+                     <img src="image/staff/robbie_elliot.jpeg" alt="Robbie Elliot">
+                     <figcaption>
+                        <h3>Robbie Elliot</h3>
+                        <P>Climbing Instructor</P>
+                     </figcaption>
+                </figure>               
+            </div>
+             <div class="confetti-area">
+                    <p>Congratulate our amazing Lochquarry team!</p>
+                    <button id="confettiButton" type="button">Launch Confetti</button>
+                </div>
+            </section>
+            <p>
+                Our Lochquarry staff members highlt professionaly trained to handle and guide schools students as a pair and group, family and adult gropu activities in a highly trained professional way. They have their own specialization field and also cover all the other activities at Lochquarry Outdoor Centre. 
+            </p>
+            <h2>Customer Reviews</h2>
+            <p>The outdoor centre is the best place to go on summer and akso in winter. it is good for both individual and group activities, not only for adults but also for young people.</p>
+            <p>Very best experience at lochquarry outdoor centre. we keep coming to enjoy allt he outdoor activities with our kids next year too.</p>
+            <p>Learn more about out professional staff<a href="https://outdoorelements.co.uk/contact-us/" target="_blank">Rope based activities </a></p>
+             <div class="page-buttons">
+            <a href="about.html" class="next-page-button">
+                Previous:Rope Activities
+            </a>
+            <a href="index.html" class="next-page-button">Return to Home</a>
+          </div>
+<body>
+    <main>
+        <script>
+    const typed = new Typed("#typedText", {
+  strings: ["Land based activities", "Water based activities", "Rope based activities", "Let Adventure Conquer You"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  backDelay: 1200,
+  loop: true
+});
+const confettiButton = document.getElementById("confettiButton");
+
+confettiButton.addEventListener("click", function () {
+  confetti({
+    particleCount: 120,
+    spread: 80,
+    origin: { y: 0.65 }
+  });
+});
+</script>
+        <footer class="site-footer">
+        <p>
+            &copy; 2026 Lochquarry Outdoor Centre. All rights reserved.
+        </p>
+    </footer>
+    </main>
+</body>
+</html>

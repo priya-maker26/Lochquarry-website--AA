@@ -1,0 +1,281 @@
+/* default spacing*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*general page design*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8f3f2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/*top with logo and text*/
+.top-area{
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 15px 40px;
+    background-color: #ffffff;
+}
+
+/*logo*/
+.logo{
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+/*content next to logo*/
+.welcome-text{
+    flex: 1;
+    text-align: center;
+}
+.welcome-text p{
+    color: #d09220;
+    font-size: 34px;
+}
+.welcome-text p{
+    color: #d09220;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+    background-color: #469191;
+    overflow: hidden;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+/*naviagtion*/
+.main-navigation{
+    background-color: #2f7779;
+}
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.main-navigation a{
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.main-navigation a:hover,
+.main-navigation a.active{
+    background-color: #d69d24;
+    color: #ffffff;
+}
+
+/*main page content*/
+.page-content{
+    width: 90%;
+    max-width: 1100px;
+    min-height: 350px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/*introduction*/
+.introduction{
+    text-align: center;
+}
+.introduction h2{
+    margin-bottom: 20px;
+    color:#2f7779;
+    font-size: 30px;
+}
+.introduction p{
+    max-width: 800px;
+    margin: 0 auto 18px;
+    font-size: 18px;
+}
+
+/*next- page button*/
+.next-page-button{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background-color: #d69d24;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.next-page-button:hover{
+    background-color: #2f7779;
+}
+
+/*footer*/
+.site-footer{
+    padding: 22px;
+    background-color: #2f7779;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*mobile-screen design*/
+@media screen and (max-width:700px){
+    .top-area{
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    .logo{
+        width: 180px;
+    }
+    .welcome-text h1{
+        font-size: 26px;
+    }
+    .banner img{
+        height: 220px;
+    }
+    .main-navigation ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .page-content{
+        width: 94%;
+        padding: 22px;
+    }
+    .page-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .activity-images{
+        grid-template-columns: 1fr;
+    }
+    .activity-images img{
+        height: 220px;
+    }
+    .staff-grid{
+        grid-template-columns: 1fr;
+    }
+    .staff-card{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .staff-card img{
+        height:360px;
+    }
+    .nature-image{
+        height: 230px;
+    }
+}
+
+/*Headings inside activity pages*/
+.introduction h3{
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #d09220;
+    font-size: 23px;
+}
+
+/*previous and next page buttons*/
+.page-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/*activity image gallery*/
+
+.activity-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+    margin: 20px 0;
+}
+.activity-images img{
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*staff sec*/
+
+.staff-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 100%;
+}
+
+/*indi staff card*/
+
+.staff-card{
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/*staff images*/
+
+.staff-card img{
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*area under the image*/
+
+.staff-details{
+padding:18px 12px 22px;
+}
+.staff-details h3{
+    margin: 0 0 7px;
+    color: #2f7779;
+    font-size: 23px;
+}
+.staff-details p{
+    margin: 0;
+    color: #444444;
+    font-size: 17px;
+}
+
+/*description*/
+
+.staff-description{
+    max-width: 900px;
+    margin: 30px auto 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/*nature images */
+
+.nature-image{
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: 380px;
+    margin: 25px auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Activities at Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-area">
+            <a href="index.html"> 
+                <img src="image/logo/Logo-jpg.jpg" alt="Lochquarry Outdoor Centre logo" class="logo">
+            </a>
+            <div class="welcome-text">
+            <h1>Lochquarry Outdoor Centre</h1>
+             <p>World Famous <span id="typedText">interactive</span></p>
+        </div>
+            </div>
+                <div class="banner">
+                    <img src="image/banner/banner-Lochquarry outdoor centre.png" alt="Lochquarry Outdoor Centre banner">
+                </div>
+
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="land.html">LAND</a></li>
+                        <li><a href="water.html">WATER</a></li>
+                        <li><a href="rope.html">ROPE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="staff.html">STAFF</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main class="page-content">
+        <section class="introduction">
+            <h2>Water-Based Activites</h2>
+            <p>
+                Water-based activities take pace on Lochquarry itself and are supervised by our trained instructions. 
+            </p>
+            <h3>Kayaking</h3>
+            <div class="activity-images">
+                <img class="tilt-card" src="image/activities/water/kayaking_1.jpg" alt="kayaking activity on lochquarry">
+                <img class="tilt-card" src="image/activities/water/kayaking_2.jpg" alt="participants paddling kayaks">
+                <img class="tilt-card" src="image/activities/water/kayaking_3.jpg" alt="group kayaking at lochquarry">
+            </div>
+            <p>
+                Have a go at paddling, rolling and rafting in one of our modern kayaks. Maximum gropu size:8. Suitable for ages 8 and above.
+            </p>
+            <h3>Canoeing</h3>
+            <div class="activity-images">
+                <img class="tilt-card" src="image/activities/water/kayaking_4.jpg" alt="caneing at lochquarry">
+            </div>
+            <p>
+                Work independently or in pairs to canoe along Lochquarry. YOu can also explore some of the Loch's islands. 
+            </p>
+            <h3>Powerboating</h3>
+            <div class="activity-images">
+                <img class="tilt-card" src="image/activities/water/powerboating_1.jpg" alt="poweboating on lochquarry">
+                <img class="tilt-card" src="image/activities/water/powerboating_2.jpg"alt="powerboating activity on lochquarry">
+            </div>
+            <p>
+                Take control of one of the Centre's powerboats and learn basic powerboating skills. Maximum group size 6. Suitable for ages 12 and above. 
+            </p>
+            <h2>Customer Reviews</h2>
+            <p>The outdoor centre is the best place to go on summer and akso in winter. it is good for both individual and group activities, not only for adults but also for young people.</p>
+            <p>Very best experience at lochquarry outdoor centre. we keep coming to enjoy allt he outdoor activities with our kids next year too.</p>
+            <p>Learn more about water-based activities at <a href="https://outdoorelements.co.uk/activities/river-study" target="_blank">Water activities </a></p>
+            <div class="page-buttons">
+                <a href="land.html" class="next-page-button">
+                    Previous:Land ACTIVITIES
+                </a>
+                <a href="rope.html" class="next-page-button">
+                    Next:Rope Activities
+                </a>
+</div>        </section>
+    </main>
+    <script>
+    const typed = new Typed("#typedText", {
+  strings: ["Land based activities", "Water based activities", "Rope based activities", "Let Adventure Conquer You"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  backDelay: 1200,
+  loop: true
+});
+
+VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+  max: 15,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.25
+});
+</script>
+    <footer class="site-footer">
+        <p>
+            &copy; 2026 Lochquarry Outdoor Centre. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
